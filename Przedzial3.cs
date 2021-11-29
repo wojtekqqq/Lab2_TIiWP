@@ -9,7 +9,7 @@ namespace Lab2
     class Przedzial3 : IPrzedzialy
     {
         public int Id => 3;
-        public string Name => "Przedział trzeci od -5 do 0";
+        public string Name => "From -5 to 0";
 
         public decimal rangeFrom()
         {

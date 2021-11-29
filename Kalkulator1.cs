@@ -9,7 +9,7 @@ namespace Lab2
     class Kalkulator1 : ICalculator
     {
         public int Id => 1;
-        public string Name => "Metoda Kwadratów";
+        public string Name => "The method of rectangles";
 
         public decimal GetIntegralValue(IFunction function, decimal rangeFrom, decimal rangeTo)
         {
@@ -23,7 +23,7 @@ namespace Lab2
                 x += krok;
             }
 
-            Console.WriteLine("Przybliżona wartość całki przy wariancie środkowych kwadratów :" + powierzchnia);
+            Console.WriteLine("Approximate value of the integral for the variant of middle rectangles :" + powierzchnia);
 
             return powierzchnia;
         }

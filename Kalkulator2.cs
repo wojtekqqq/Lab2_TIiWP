@@ -9,7 +9,7 @@ namespace Lab2
     class Kalkulator2 : ICalculator
     {
         public int Id => 2;
-        public string Name => "Metoda trapezow";
+        public string Name => "The trapezoidal method";
 
         public decimal GetIntegralValue(IFunction function, decimal rangeFrom, decimal rangeTo)
         {
@@ -24,7 +24,7 @@ namespace Lab2
                 powierzchnia += function.GetY(rangeFrom + i * krok);
             }
             powierzchnia = (powierzchnia + (function.GetY(rangeFrom) + function.GetY(rangeTo)) / 2) * krok;
-            Console.WriteLine("Przybliżona wartość całki metodą trapezów :" + powierzchnia);
+            Console.WriteLine("Approximate value of the integral by the trapezoidal method: :" + powierzchnia);
             return powierzchnia;
         }
     }
